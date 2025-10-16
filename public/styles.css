@@ -1,0 +1,206 @@
+.caladea-regular {
+  font-family: "Caladea", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.caladea-bold {
+  font-family: "Caladea", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.caladea-regular-italic {
+  font-family: "Caladea", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.caladea-bold-italic {
+  font-family: "Caladea", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.outfit-title {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+h1 {
+    color: #352919;
+    font-family: 'Outfit', sans-serif;
+    font-size: 2.5em;
+    font-weight: 500;
+    text-align: center;
+    line-height: 100%;
+    margin-top: 3rem;
+}
+
+h2 {
+    color: #352919;
+    font-family: 'Outfit', sans-serif;
+    text-align: center;
+    line-height: 100%;
+    font-size: 1em;
+    font-weight: 300;
+    padding: 0 5%;
+}
+
+body {
+    background-color: #ffe9d6;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1em;
+    padding: 0;
+    text-align: center;
+}
+
+video {
+    border: 0.2rem solid #352919;
+    border-radius: 16px;
+    max-width: 70%;
+    height: auto;
+    margin-top: 0.5rem;
+    width: 45em;
+}
+
+button,
+a.button {
+  background-color: #ac977b;
+  border: 0.2rem solid #352919;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Outfit', sans-serif;
+  font-size: clamp(0.9rem, 2.2vw, 1rem);
+  padding: 0.5em 0.75em;
+  text-decoration: none;
+  width: min(10rem, 100%);
+  max-width: 10rem;
+  box-sizing: border-box;
+  line-height: 1.1;
+  transition: background-color 180ms ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-right: 1.5rem;
+  min-height: 44px; /* touch target */
+}
+
+/* Make buttons stack and fill available width on small screens */
+@media (max-width: 600px) {
+  button,
+  a.button {
+    display: block;
+    width: calc(100% - 2rem);
+    max-width: none;
+    margin: 0.5rem auto;
+    padding: 0.75em 1rem;
+    font-size: 1rem;
+  }
+}
+
+/* Slightly larger hit area on very small phones */
+@media (max-width: 360px) {
+  button,
+  a.button {
+    padding: 0.9em 1rem;
+    font-size: 1.02rem;
+  }
+}
+
+/* If an anchor is used inside or as a button, keep its color from turning blue/visited */
+button a,
+button a:link,
+button a:visited,
+button a:active,
+a.button,
+a.button:link,
+a.button:visited,
+a.button:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Background change when clicked (with transition) */
+button:active,
+a.button:active {
+  background-color: #8f7b60; /* darker shade for pressed state */
+}
+
+/* Keep a visible focus ring for accessibility */
+button:focus,
+a.button:focus {
+  outline: 3px solid rgba(53,41,25,0.15);
+  outline-offset: 2px;
+}
+
+.propic {
+    display: flex;
+    position: fixed;
+    left: 1rem;
+    bottom: 1rem;
+    text-align: left;
+    border-radius: 100%;
+    width: 5em;
+    height: 5em;
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
+
+.LinkedIn {
+    display: flex;
+    position: fixed;
+    left: 5em;
+    bottom: 0.7rem;
+    text-align: left;
+    width: 2em;
+    height: 2em;
+    z-index: 1001;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Responsive positioning for avatar & LinkedIn */
+/* @media (max-width: 600px) {
+  .propic {
+    left: 0.75rem;
+    bottom: 0.75rem;
+    width: 4em;
+    height: 4em;
+  }
+  .LinkedIn {
+    left: calc(0.75rem + 4em + 0.5rem);
+    bottom: 0.75rem;
+    width: 1.8em;
+    height: 1.8em;
+  }
+} */
+
+/* Stack vertically on very small screens
+@media (max-width: 360px) {
+  .propic {
+    left: 0.6rem;
+    bottom: 0.6rem;
+    width: 3.5em;
+    height: 3.5em;
+  }
+  .LinkedIn {
+    left: 0.6rem;
+    bottom: calc(0.6rem + 3.5em + 0.4rem);
+    width: 1.6em;
+    height: 1.6em;
+  }
+} */
+
+.claim {
+  color: #352919;
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-top: 0rem;
+  line-height: 75%;
+}
